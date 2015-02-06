@@ -6,7 +6,7 @@
 //  Copyright 2013 A Tasty Pixel. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @interface UIScrollView (TPKeyboardAvoidingAdditions)
 - (BOOL)TPKeyboardAvoiding_focusNextTextField;
@@ -19,4 +19,7 @@
 - (void)TPKeyboardAvoiding_assignTextDelegateForViewsBeneathView:(UIView*)view;
 - (UIView*)TPKeyboardAvoiding_findFirstResponderBeneathView:(UIView*)view;
 -(CGSize)TPKeyboardAvoiding_calculatedContentSizeFromSubviewFrames;
+
+- (void)TPKeyboardAvoiding_hideKeyboard;
+
 @end
